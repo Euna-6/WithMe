@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:id="@+id/et_id"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"></EditText>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:layout_marginBottom="20dp"
+        android:maxLength="20"
+        android:inputType="textPassword"
+        android:id="@+id/et_pwd"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_login"></Button>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#CDCDCD"
+        android:layout_margin="40dp"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="간편로그인"
+        android:textSize="11dp"
+        android:layout_marginBottom="11dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_google"
+            android:id="@+id/iv_login_google"></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디가 없으세요? [회원가입]"
+        android:id="@+id/tv_signup"
+        android:layout_marginTop="40dp"></TextView>
+</LinearLayout>
