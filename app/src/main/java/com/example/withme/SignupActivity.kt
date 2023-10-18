@@ -14,6 +14,7 @@ class SignupActivity : AppCompatActivity() {
         val binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // 나중에 다른 type으로 바꾸기
         binding.switchSignupBday.setOnCheckedChangeListener{ btnview,isChecked ->
             if (isChecked) {
                 DatePickerDialog(this, object: DatePickerDialog.OnDateSetListener {
@@ -27,15 +28,9 @@ class SignupActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnSingupFinish.setOnClickListener {
 
-        /*
-        binding.chbxSignup.setOnClickListener{
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-
-            }
         }
-
-         */
 
     }
 }
