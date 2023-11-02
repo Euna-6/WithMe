@@ -8,8 +8,6 @@ import com.example.withme.databinding.ActivityMainPopupBinding
 class PopupActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);  // 타이틀바 없애기
-
         val binding = ActivityMainPopupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
