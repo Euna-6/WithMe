@@ -13,6 +13,10 @@ class PopupActivity : Activity() {
         val binding = ActivityMainPopupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnPopupRegister.setOnClickListener{
+
+        }
+
         binding.btnPopupBack.setOnClickListener{
             finish()
         }

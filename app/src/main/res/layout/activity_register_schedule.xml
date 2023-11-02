@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="우리 모임의 이름은?"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"></TextView>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:maxLength="18"
+        android:hint="18글자 이내 입력"
+        android:maxLines="1"
+        android:id="@+id/et_register_title"></EditText>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20xx"
+            android:textSize="17dp"
+            android:id="@+id/tv_register_year"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="년"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx"
+            android:textSize="17dp"
+            android:id="@+id/tv_register_month"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="월"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="xx"
+            android:id="@+id/tv_register_day"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="일"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="where"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#DDDDDD"
+            android:maxLines="2"
+            android:maxLength="35"
+            android:hint="35글자 이내 입력"
+            android:padding="10dp"
+            android:id="@+id/et_register_where"></EditText>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="#DDDDDD"
+        android:hint="모임에 대한 설명을 써주세요!\nex> 치맥하러갈사람!!!"
+        android:padding="10dp"
+        android:maxLines="8"
+        android:id="@+id/et_register_content"></EditText>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체공개로 등록"
+            android:layout_weight="1"
+            android:id="@+id/btn_register_nonstar"
+            android:layout_marginRight="10dp"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="단짝공개로 등록"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_register_star"></Button>
+    </LinearLayout>
+
+</LinearLayout>
