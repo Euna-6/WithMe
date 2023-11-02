@@ -18,12 +18,6 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/ic_sidebtn1"
-            android:id="@+id/btn_friend"></ImageButton>
-        <ImageButton
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/ic_sidebtn1"
-            android:layout_alignParentRight="true"
-            android:id="@+id/btn_myPage"></ImageButton>
+            android:id="@+id/btn_go_list"></ImageButton>
     </RelativeLayout>
 </LinearLayout>

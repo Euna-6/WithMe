@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PopupActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnGoList.setOnClickListener {
+            val intent = Intent(this, ListFriendsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
