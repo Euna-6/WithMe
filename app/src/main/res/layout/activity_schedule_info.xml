@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_info_myProfile"
+                android:src="@drawable/default_profile"></de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내이름"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_info_myName"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="타이틀 제목"
+                    android:textSize="12dp"
+                    android:maxLines="1"
+                    android:id="@+id/tv_info_title"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20xx"
+                android:textSize="17dp"
+                android:id="@+id/tv_info_year"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="년"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xx"
+                android:textSize="17dp"
+                android:id="@+id/tv_info_month"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="월"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="xx"
+                android:id="@+id/tv_info_day"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="일"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#DDDDDD"
+                android:maxLines="2"
+                android:maxLength="35"
+                android:editable="false"
+                android:padding="10dp"
+                android:id="@+id/et_info_where"></EditText>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="#DDDDDD"
+                android:editable="false"
+                android:padding="10dp"
+                android:maxLines="8"
+                android:id="@+id/et_info_content"></EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="------------  참여자 목록  ------------"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/linear_info_partyList"
+            android:visibility="gone">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/iv_info_partyProfile"
+                android:src="@drawable/default_profile"></de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_info_partyName"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파티신청하기"
+            android:id="@+id/btn_info_party"
+            android:layout_marginTop="20dp"></Button>
+
+
+    </LinearLayout>
+</ScrollView>
